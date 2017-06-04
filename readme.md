@@ -50,16 +50,16 @@
 
 ### How to run ###	
 
-	1. Using Command line : 
+1. Using Command line : 
 
-		```java -cp .;junit-4.12.jar;hamcrest-core-1.3.jar org.junit.runner.JUnitCore CalculatorTest```	
+	```java -cp .;junit-4.12.jar;hamcrest-core-1.3.jar org.junit.runner.JUnitCore CalculatorTest```	
 
-		The output is <br>
+	The output is <br>
 
-		```
-		JUnit version 4.12
-		. // one . means 1 test run
-		Time: 0,006
+	```
+	JUnit version 4.12
+	. // one . means 1 test run
+	Time: 0,006
 
-		OK (1 test)
-		```	
+	OK (1 test)
+	```	
