@@ -2,7 +2,7 @@
 
 1. create a directory
 
-mkdir UnitTesting
+	mkdir UnitTesting
 
 2. Create Calculator.java under UnitTesting
 
@@ -50,5 +50,15 @@ mkdir UnitTesting
 ### How to run ###	
 
 	1. Using Command line : 
-	
+
 		`java -cp .;junit-4.12.jar;hamcrest-core-1.3.jar org.junit.runner.JUnitCore CalculatorTest`	
+
+		The output is <br>
+
+		```java
+		JUnit version 4.12
+		. // one . means 1 test run
+		Time: 0,006
+
+		OK (1 test)
+		```	
