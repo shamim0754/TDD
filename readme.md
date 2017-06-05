@@ -50,7 +50,7 @@
 
 ### How to run ###	
 
-1. Using Command line : 
+1. JUnitCore Using Command line : 
 
 	```java -cp .;junit-4.12.jar;hamcrest-core-1.3.jar org.junit.runner.JUnitCore CalculatorTest```	
 
@@ -63,3 +63,33 @@
 
 	OK (1 test)
 	```	
+
+	JUnitCore Using program : <br>
+
+	```java
+	import org.junit.runner.JUnitCore;
+	import org.junit.runner.Result;
+	import org.junit.runner.notification.Failure;
+
+	public class Runner 
+	{
+	    public static void main( String[] args )
+	    {
+		   System.out.println("Hello world");			
+		   Result result = JUnitCore.runClasses(CalculatorTest.class);
+	       for (Failure failure : result.getFailures())
+	       {
+	            System.out.println(failure.toString());
+	       }	
+		   System.out.println(result.wasSuccessful());
+	    }
+
+	``` 
+
+	compile <br> 
+
+	```javac -cp .;junit-4.12.jar;hamcrest-core-1.3.jar Runner.java```
+
+	Run <br> 
+
+	```java -cp .;junit-4.12.jar;hamcrest-core-1.3.jar Runner```
