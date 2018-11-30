@@ -1,8 +1,8 @@
 ### Demo ###
 
-1. create a directory
+1. create a maven project
 
-	mkdir UnitTesting
+mvn archetype:generate -DgroupId=com.javaaround.TestApp -DartifactId=TDD -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 
 2. Create Calculator.java under UnitTesting
 
